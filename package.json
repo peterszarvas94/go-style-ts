@@ -1,0 +1,16 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "Go-style in TypeScript",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "tsc && node dist/main.js",
+    "lastError": "jq -sr 'map(select(.severity == \"ERROR\")) | last | .stack' log.txt"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  }
+}
